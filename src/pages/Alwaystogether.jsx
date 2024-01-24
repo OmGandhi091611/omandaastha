@@ -3,11 +3,14 @@ import emailjs from '@emailjs/browser';
 import Loader from '../components/Loader'; 
 import { Canvas } from '@react-three/fiber';
 import Fox from '../models/Fox';
+import useAlert from '../hooks/useAlert';
+import Alert from '../components/Alert';
 const Alwaystogether = () => {
     const formRef = useRef();
     const [form, setForm] = useState({name: "", message: "", email: ""});
     const [loading, setLoading] = useState(false);
     const [currentAnimation, setCurrentAnimation] = useState('idle');
+    const { alert, showAlert, hideAlert } = useAlert();
     const handleChange = (event) => {
         setForm({ ...form, [event.target.name]: event.target.value });
     };
@@ -30,14 +33,22 @@ const Alwaystogether = () => {
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
         ).then(() => {
             setLoading(false);
+            showAlert({ show: true, text: 'Mail Aavi gyo Mara Parmeshwari ji❤️❤️❤️❤️', type: 'success'});
+            setTimeout(() => {
+                hideAlert();
+                setCurrentAnimation('idle');
+                setForm({name: '', email: '', message: ''})
+            }, [3000])
         }).catch((error) => {
             setLoading(false);
             setCurrentAnimation('idle');
             console.log(error);
+            showAlert({ show: true, text: 'Mail nai aavyo Mara Parmeshwari ji🥺🥺🥺', type: 'danger'});
         })
     };
   return (
     <section className='relative flex lg:flex-row flex-col max-container'>
+        {alert.show && <Alert {...alert} /> }
         <div className='flex-1 min-w-[50%] flex flex-col'>
             <h1 className='head-text'>
                 Apdu j mail che lakhi le😁😁
