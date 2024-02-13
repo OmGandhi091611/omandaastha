@@ -14,14 +14,14 @@ const contentRender = {
     ),
     2: (
         <InfoBox 
-            text="Chal Taru Nanpan joiye pehla aapde😁😘"
+            text="Chal aapdu nanpan joiye pehla aapde😁😘"
             link="/childhood"
             btnText="Ahiya click Kar"
         />
     ),
     3: (
         <InfoBox 
-            text="Hu aavu photos ma?🤣😂 chal aapda moments joisu ave?😁😁❤️❤️"
+            text="Ave sathe avisu photos ma?🤣😂 chal aapda moments joiye?😁😁❤️❤️"
             link="/ustogether"
             btnText="Jovu Che?"
         />

@@ -1,25 +1,45 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
-import {aastha_1, aastha_2, aastha_3, aastha_4} from "../assets/icons"
+import {Om_1, Om_2, Om_3, Om_4, aastha_1, aastha_2, aastha_3, aastha_4} from "../assets/icons"
 export const skills = [
     {
         imageUrl: aastha_1,
-        name: "CSS",
-        type: "Frontend",
+        name: "aastha_1",
+        type: "aastha_1",
     },
     {
         imageUrl: aastha_2,
-        name: "Express",
-        type: "Backend",
+        name: "aastha_2",
+        type: "aastha_2",
     },
     {
         imageUrl: aastha_3,
-        name: "Git",
-        type: "Version Control",
+        name: "aastha_3",
+        type: "aastha_3",
     },
     {
         imageUrl: aastha_4,
-        name: "GitHub",
-        type: "Version Control",
+        name: "aastha_4",
+        type: "aastha_4",
+    },
+    {
+        imageUrl: Om_1,
+        name: "Om_1",
+        type: "Om_1",
+    },
+    {
+        imageUrl: Om_2,
+        name: "Om_2",
+        type: "Om_2",
+    },
+    {
+        imageUrl: Om_3,
+        name: "Om_3",
+        type: "Om_3",
+    },
+    {
+        imageUrl: Om_4,
+        name: "Om_4",
+        type: "Om_4",
     }
 ];
 
