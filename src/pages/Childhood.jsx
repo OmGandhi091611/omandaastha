@@ -1,5 +1,5 @@
 import React from 'react'
-import { skills, experiences } from '../constants'
+import { childhood_images, childhood } from '../constants'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import CTA from '../components/CTA'
@@ -17,13 +17,13 @@ const Childhood = () => {
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>US both</h3>
         <div className='mt-16 flex flex-wrap gap-12'>
-          {skills.map((skill) => (
-            <div className='block-container w-40 h-40' key={skill.name}>
+          {childhood_images.map((child) => (
+            <div className='block-container w-40 h-40' key={child.name}>
               <div className='btn-back rounded-xl'/>
                 <div className='btn-front rounded-xl flex justify-center items-center'>
                   <img 
-                  src={skill.imageUrl} 
-                  alt={skill.name} 
+                  src={child.imageUrl} 
+                  alt={child.name} 
                   className='w-40 h-40 object-contain' 
                   />
                 </div>
@@ -42,33 +42,33 @@ const Childhood = () => {
             </div>
             <div className='mt-12 flex'>
               <VerticalTimeline>
-                {experiences.map((experience) =>(
+                {childhood.map((childhood_description) =>(
                   <VerticalTimelineElement
-                    key={experience.name}
-                    date={experience.date}
+                    key={childhood_description.name}
+                    date={childhood_description.date}
                     icon={
                       <div className='flex justify-center items-center w-full h-full'>
-                        <img src={experience.icon} alt={experience.name} className='w-[70%] h-[70%] object-contain' />
+                        <img src={childhood_description.icon} alt={childhood_description.name} className='w-[70%] h-[70%] object-contain' />
                       </div>
                     }
-                    iconStyle={{background: experience.iconBg}}
+                    iconStyle={{background: childhood_description.iconBg}}
                     contentStyle={{
                       borderBottom: '8px',
                       borderStyle: 'solid',
-                      borderBottomColor: experience.iconBg,
+                      borderBottomColor: childhood_description.iconBg,
                       boxShadow: 'none'
                     }}
                   >
                     <div>
                       <h3 className='text-black text-xl font-poppins font-semibold'>
-                        {experience.title}
+                        {childhood_description.title}
                       </h3>
                       <p className='text-black-500 font-medium font-base' style={{margin: 0}}>
-                        {experience.name}
+                        {childhood_description.name}
                       </p>
                     </div>
                     <ul className='my-5 list-disc ml-5 space-y-2'>
-                      {experience.points.map((point, index) => (
+                      {childhood_description.points.map((point, index) => (
                         <li key={`experience-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
                           {point}
                         </li>

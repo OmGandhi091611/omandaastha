@@ -1,5 +1,5 @@
 import {Om_1, Om_2, Om_3, Om_4, aastha_1, aastha_2, aastha_3, aastha_4, Levi, Billie, last_date, cluboffshore, navratri_flowers, navratri_second_kiss, cafe, first_date} from "../assets/icons"
-export const skills = [
+export const childhood_images = [
     {
         imageUrl: aastha_1,
         name: "aastha_1",
@@ -42,7 +42,7 @@ export const skills = [
     }
 ];
 
-export const experiences = [
+export const childhood = [
     {
         title: "Aastha Day",
         name: "Luckiest Day for me",
@@ -71,7 +71,7 @@ export const experiences = [
     },
 ];
 
-export const projects = [
+export const us = [
     {
         iconUrl: first_date,
         theme: 'btn-back-red',
