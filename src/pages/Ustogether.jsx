@@ -1,6 +1,5 @@
 import React from 'react'
-import { projects } from '../constants'
-import { mapLinear } from 'three/src/math/MathUtils'
+import { us } from '../constants'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
 const Ustogether = () => {
