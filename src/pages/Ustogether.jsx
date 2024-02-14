@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { us } from '../constants'
 import { Link } from 'react-router-dom'
 import CTA from '../components/CTA'
+import song_3 from '../assets/Chedkhaniyaan - Bandish Bandits Shankar-Ehsaan-Loy,Shivam Mahadevan,Pratibha Baghel.mp3'
+import { sound_off, sound_on } from '../assets/icons'
 const Ustogether = () => {
+  const audioRef = useRef(new Audio(song_3))
+  audioRef.current.volume = 0.5
+  audioRef.current.loop = true
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false)
+  useEffect(() => {
+    if(isPlayingMusic) {
+      audioRef.current.play()
+    }
+    else {
+      audioRef.current.pause()
+    }
+    return () => audioRef.current.pause()
+  })
   return (
     <section className='max-container'>
       <h1 className='head-text'>
@@ -42,6 +57,14 @@ const Ustogether = () => {
             </div>
           </div>
         ))}
+        <div className="fixed bottom-2 left-2">
+          <img 
+            src={isPlayingMusic ? sound_off : sound_on} 
+            alt="sound" 
+            className="w-10 h-10 cursor-pointer object-contain"
+            onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+          />
+        </div>
       </div>
       <hr className='border-slate-200'/>
       <CTA />

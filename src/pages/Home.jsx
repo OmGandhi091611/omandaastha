@@ -2,7 +2,13 @@ import { Canvas } from "@react-three/fiber"
 import { Suspense, useEffect, useRef, useState } from "react"
 import { HomeInfo , Loader } from "../components";
 import { Plane, Bird, Island, Sky } from "../models"
+import song_1 from '../assets/TUM SE HI (INSTRUMENTAL).mp3'
+import { sound_off, sound_on } from "../assets/icons";
 const Home = () => {
+  const audioRef = useRef(new Audio(song_1))
+  audioRef.current.volume = 0.5
+  audioRef.current.loop = true
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false)
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(false);
   const adjustIslandForScreenSize = () => {
@@ -30,6 +36,18 @@ const Home = () => {
     }
     return [screenScale, screenPosition]
   }
+
+  useEffect(() => {
+    if(isPlayingMusic) {
+      audioRef.current.play()
+    }
+    else {
+      audioRef.current.pause()
+    }
+    return () => {
+      audioRef.current.pause()
+    }
+  }, [isPlayingMusic])
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
   return (
@@ -63,7 +81,14 @@ const Home = () => {
               />
             </Suspense>
         </Canvas>
-        
+        <div className="absolute bottom-2 left-2">
+          <img 
+            src={isPlayingMusic ? sound_off : sound_on} 
+            alt="sound" 
+            className="w-10 h-10 cursor-pointer object-contain"
+            onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+          />
+        </div>
     </section>
   )
 }

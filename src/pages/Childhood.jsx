@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { childhood_images, childhood } from '../constants'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import song_2 from '../assets/LYRICAL _ I love You (Song)  Bodyguard  feat. Salman khan, Kareena Kapoor.mp3'
+import { sound_off, sound_on } from "../assets/icons";
 import CTA from '../components/CTA'
 const Childhood = () => {
+  const audioRef = useRef(new Audio(song_2))
+  audioRef.current.volume = 0.5
+  audioRef.current.loop = true
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false)
+  useEffect(() => {
+    if(isPlayingMusic) {
+      audioRef.current.play()
+    }
+    else {
+      audioRef.current.pause()
+    }
+    return () => audioRef.current.pause()
+  })
   return (
     <section className='max-container'>
       <h1 className='head-text'>
@@ -78,6 +93,14 @@ const Childhood = () => {
                 ))}
               </VerticalTimeline>
             </div>
+        <div className="fixed bottom-2 left-2">
+          <img 
+            src={isPlayingMusic ? sound_off : sound_on} 
+            alt="sound" 
+            className="w-10 h-10 cursor-pointer object-contain"
+            onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+          />
+        </div>
       </div>
       <hr className='border-slate-200' />
       <CTA />
