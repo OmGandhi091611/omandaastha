@@ -39,12 +39,14 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>  {
       if(!isRotating) {
         setIsRotating(true);
         islandRef.current.rotation.y += 0.01 * Math.PI;
+        rotationSpeed.current = 0.0125;
       }
     }
     else if (event.key === 'ArrowRight') {
       if(!isRotating) {
         setIsRotating(true);
         islandRef.current.rotation.y -= 0.01 * Math.PI;
+        rotationSpeed.current = -0.0125;
       }
     }
   }
@@ -75,7 +77,8 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) =>  {
         rotationSpeed.current = 0;
       }
       islandRef.current.rotation.y += rotationSpeed.current;
-    } else {
+    } 
+    else {
       const rotation = islandRef.current.rotation.y;
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);

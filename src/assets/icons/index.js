@@ -6,6 +6,14 @@ import Om_1 from './Om_1.svg'
 import Om_2 from './Om_2.svg'
 import Om_3 from './Om_3.svg'
 import Om_4 from './Om_4.svg'
+import Levi from './Levi.svg'
+import Billie from './Billie.svg'
+import first_date from './first_date.svg'
+import cafe from './cafe.svg'
+import cluboffshore from './cluboffshore.svg'
+import navratri_flowers from './Navratri_flowers.svg'
+import navratri_second_kiss from './navratri_second_kiss.svg'
+import last_date from './last_date.svg'
 
 export {
     aastha_1,
@@ -15,5 +23,12 @@ export {
     Om_1,
     Om_2,
     Om_3,
-    Om_4
+    Om_4,
+    Levi,
+    Billie,
+    first_date,
+    cafe,
+    cluboffshore,
+    navratri_flowers,navratri_second_kiss,
+    last_date
 }

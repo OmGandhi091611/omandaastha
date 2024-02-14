@@ -1,5 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
-import {Om_1, Om_2, Om_3, Om_4, aastha_1, aastha_2, aastha_3, aastha_4} from "../assets/icons"
+import {Om_1, Om_2, Om_3, Om_4, aastha_1, aastha_2, aastha_3, aastha_4, Levi, Billie, last_date, cluboffshore, navratri_flowers, navratri_second_kiss, cafe, first_date} from "../assets/icons"
 export const skills = [
     {
         imageUrl: aastha_1,
@@ -45,118 +44,74 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Aastha Day",
+        name: "Luckiest Day for me",
+        icon: Billie,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "February 2005",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "15th February 2005, mara life no luckiest day because ee divase tara mummy ee tane janam aapi ne mari life safal kari.😁😁😁😁",
+            "You know Aastha, life na 21 years jivi chukelo pan life mari start thayi ti on 17th July 2023.",
+            "I still remember how mein tane puchelu that Do I know you, honestly vicharyu natu that ee Do I know you thi mara parmeshwariji par kyare aavyo pan the one of the most beautiful transition of my life mara parmeshwari ji❤️❤️❤️❤️❤️.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "First time chat",
+        name: "Added me by mistake",
+        icon: Levi,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "July 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "I still remember tu ee mane bhul ma add karelo and then randomly after 15 days te snap mukyo ne tya thi we started to talk.",
+            "Hu toh tya j taro photo joine aam besi j gyo that ahhhh she's so gorgeous jemne aagad jaine mein naam aapyu 'Mara Parmeshwari ji'❤️❤️❤️❤️😁😁😁😁.",
+            "I still remember je photo te moklelo mane, te ble colour no dress pehrelo. Mirror Selfie Hati❤️❤️❤️❤️😁😁😁.",
+            "Yaad che tane pachi mein maro photo batavelo tane pelo wilson hill walo snap jya railing par kaik mast comedy lakhelu?😂😂😂.",
         ],
     },
 ];
 
-// export const socialLinks = [
-//     {
-//         name: 'Contact',
-//         iconUrl: contact,
-//         link: '/contact',
-//     },
-//     {
-//         name: 'GitHub',
-//         iconUrl: github,
-//         link: 'https://github.com/YourGitHubUsername',
-//     },
-//     {
-//         name: 'LinkedIn',
-//         iconUrl: linkedin,
-//         link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-//     }
-// ];
-
-// export const projects = [
-//     {
-//         iconUrl: pricewise,
-//         theme: 'btn-back-red',
-//         name: 'Amazon Price Tracker',
-//         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-//         link: 'https://github.com/adrianhajdin/pricewise',
-//     },
-//     {
-//         iconUrl: threads,
-//         theme: 'btn-back-green',
-//         name: 'Full Stack Threads Clone',
-//         description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-//         link: 'https://github.com/adrianhajdin/threads',
-//     },
-//     {
-//         iconUrl: car,
-//         theme: 'btn-back-blue',
-//         name: 'Car Finding App',
-//         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-//         link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-//     },
-//     {
-//         iconUrl: snapgram,
-//         theme: 'btn-back-pink',
-//         name: 'Full Stack Instagram Clone',
-//         description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-//         link: 'https://github.com/adrianhajdin/social_media_app',
-//     },
-//     {
-//         iconUrl: estate,
-//         theme: 'btn-back-black',
-//         name: 'Real-Estate Application',
-//         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-//         link: 'https://github.com/adrianhajdin/projects_realestate',
-//     },
-//     {
-//         iconUrl: summiz,
-//         theme: 'btn-back-yellow',
-//         name: 'AI Summarizer Application',
-//         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-//         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-//     }
-// ];
+export const projects = [
+    {
+        iconUrl: first_date,
+        theme: 'btn-back-red',
+        name: 'Hands holding (3 ekka😂😂😂)',
+        description: 'Watching you for the first time was like ahhh ketli cute che yaar🥺🥺🥺🥺, Tane yaad che akhi date par aapde khali lift ma photos click karela. But the favourite moment of that day was holding your hands for the first time, evu lagyu that bas ave chodhvo nathi koi divas😁😁😁💕💕💕',        
+        link: '',
+    },
+    {
+        iconUrl: cluboffshore,
+        theme: 'btn-back-green',
+        name: 'Bakwaas Fried rice🤣🤣🤣',
+        description: 'Prachi ben no suggested cafe, huhhh🤣🤣, yaad che we ordered fried rice and mojito pan etlu bi natu khavatu. For me there were many special moments that day like, taru mane joya karvu while I was singing, then maru tane hug karvu from behind, then our hugs and side hugs on the vespa❤️💘💝💖🥰',
+        link: 'https://github.com/adrianhajdin/threads',
+    },
+    {
+        iconUrl: navratri_flowers,
+        theme: 'btn-back-blue',
+        name: 'Those Flowers💕💕💕😍😍😍😍',
+        description: 'Probably something je mane akhi life yaad rehse that mane koi ee flowers aapela, thank you so much for those flowers mara parmeshwari ji❤️❤️❤️❤️❤️. Although, next day navratri no maro favourite hato because tyare pehli vaar aapde kiss kareli (20th October)💖💕💝💘❤️😁😍, pan still aa day pan mara mann ma hamesha rehse because aaje pan yaad karu ne toh radu aave that mara parmeshwari ji ee ena fool ne ful aapela🤣🤣😂😂',
+        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+    },
+    {
+        iconUrl: navratri_second_kiss,
+        theme: 'btn-back-pink',
+        name: 'Utavla us for getting Out😂🤣',
+        description: '21st October, actually tane khabar che mane toh aa divas barabar yaad che, you know why? because aapde etla utavla hata ne that kyare bahar jaiye to make out😂😂🤣🤣. M toh tari sathe na badha moments special j che mara but aa divas thodo vadhare special hato because, you said tu jaadi thayi gyi 6u, etlo gusso aavelo ne mane that, tane khabar che mein su karelu💝💕💖😍💘❤️🥰.',
+        link: 'https://github.com/adrianhajdin/social_media_app',
+    },
+    {
+        iconUrl: cafe,
+        theme: 'btn-back-black',
+        name: 'My Favourite Watch🥺🥺🥺',
+        description: 'Aa divas pan hu koi divas na bhulu ne and even if mane bhulvani bimari thaay ne toh hu toh just maro hath joi laav etle yaad aavi jaay aa divas, tane khabar che starting ma unghta peherto ne toh marks padta hath par but ave toh aadat padi gyi che, just like mane tari aadat padi gyi che mara parmeshwari ji❤️❤️❤️❤️❤️.',
+        link: 'https://github.com/adrianhajdin/projects_realestate',
+    },
+    {
+        iconUrl: last_date,
+        theme: 'btn-back-yellow',
+        name: 'Love You Forever❤️❤️❤️❤️❤️❤️❤️❤️',
+        description: 'Probably the best day for you I guess but the worst for me because aa date plan karta and tane bye kaine etlo radyo 6u ne hu but I was glad that tane gamelu aa😁😁😁😁. Haju pan I remember that dress of yours, tane inorbit ma joyi ne toh aam modhu khulu nu khulu j rai gyu etli mast and gorgeous dekhati hati mara parmeshwari ji❤️❤️❤️❤️❤️, By the way sorry haan taro video nato lidho while gaming pan yaar tane jova ma j hu toh khovai gyo ne that etli mast dekhati upar thi mara karta saru ramti hati mara parmeshwari ji🤣🤣. Etlo shy 6u ne hu pan aaj sudhi nai bhulu how I kissed you in the middle of the road at the end that day mara parmeshwari ji❤️❤️❤️❤️❤️. And off course aapdi gift ee divase, I hope tari pase che Hinata because mein toh Naruto ne safe rakhyo che with an important key of mine.',
+        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    }
+];
