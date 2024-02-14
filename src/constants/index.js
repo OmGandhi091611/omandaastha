@@ -63,7 +63,7 @@ export const childhood = [
         iconBg: "#fbc3bc",
         date: "July 2023",
         points: [
-            "I still remember tu ee mane bhul ma add karelo and then randomly after 15 days te snap mukyo ne tya thi we started to talk.",
+            "I still remember tu ee mane bhul ma add karelo and then randomly after 24 days te snap mukyo ne tya thi we started to talk.",
             "Hu toh tya j taro photo joine aam besi j gyo that ahhhh she's so gorgeous jemne aagad jaine mein naam aapyu 'Mara Parmeshwari ji'❤️❤️❤️❤️😁😁😁😁.",
             "I still remember je photo te moklelo mane, te ble colour no dress pehrelo. Mirror Selfie Hati❤️❤️❤️❤️😁😁😁.",
             "Yaad che tane pachi mein maro photo batavelo tane pelo wilson hill walo snap jya railing par kaik mast comedy lakhelu?😂😂😂.",
