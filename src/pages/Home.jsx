@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber"
-import { Suspense, useState } from "react"
+import { Suspense, useEffect, useRef, useState } from "react"
 import { HomeInfo , Loader } from "../components";
 import { Plane, Bird, Island, Sky } from "../models"
 const Home = () => {
@@ -63,6 +63,7 @@ const Home = () => {
               />
             </Suspense>
         </Canvas>
+        
     </section>
   )
 }

@@ -14,7 +14,8 @@ import cluboffshore from './cluboffshore.svg'
 import navratri_flowers from './Navratri_flowers.svg'
 import navratri_second_kiss from './navratri_second_kiss.svg'
 import last_date from './last_date.svg'
-
+import sound_on from './soundon.png'
+import sound_off from './soundoff.png'
 export {
     aastha_1,
     aastha_2,
@@ -30,5 +31,7 @@ export {
     cafe,
     cluboffshore,
     navratri_flowers,navratri_second_kiss,
-    last_date
+    last_date, 
+    sound_off,
+    sound_on
 }

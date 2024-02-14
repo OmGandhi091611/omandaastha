@@ -2,6 +2,7 @@ import React from 'react'
 import { projects } from '../constants'
 import { mapLinear } from 'three/src/math/MathUtils'
 import { Link } from 'react-router-dom'
+import CTA from '../components/CTA'
 const Ustogether = () => {
   return (
     <section className='max-container'>
@@ -23,13 +24,13 @@ const Ustogether = () => {
               </div>
             </div>
             <div className='mt-5 flex flex-col'>
-              <h4>
+              <h4 className='text-2xl font-poppins font-semibold'>
                 {project.name}
               </h4>
-              <p>
+              <p className='mt-2 text-slate-500'>
                 {project.description}
               </p>
-              <div>
+              <div className='mt-5 flex items-center gap-2 font-poppins'>
                 <Link 
                   to={project.link}
                   target='_blank'
@@ -43,6 +44,8 @@ const Ustogether = () => {
           </div>
         ))}
       </div>
+      <hr className='border-slate-200'/>
+      <CTA />
       </section>
   )
 }
