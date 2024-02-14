@@ -53,7 +53,6 @@ export const childhood = [
             "15th February 2005, mara life no luckiest day because ee divase tara mummy ee tane janam aapi ne mari life safal kari.😁😁😁😁",
             "You know Aastha, life na 21 years jivi chukelo pan life mari start thayi ti on 17th July 2023.",
             "I still remember how mein tane puchelu that Do I know you, honestly vicharyu natu that ee Do I know you thi mara parmeshwariji par kyare aavyo pan the one of the most beautiful transition of my life mara parmeshwari ji❤️❤️❤️❤️❤️.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
